@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Personal Portfolio - About Me</title>
+
+        <style>
+            @import url("css/style.css");
+        </style> 
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                About Layla N Gallez
+            </h1>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        </header>
+
+        <hr>
+        <div id="nav_bar">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        
+        <div class="container">
+            <table>
+                <tbody>
+                    <tr id="table_header">
+                        <td>
+                            <strong>Programming Language</strong>
+                        </td>
+                        <td>
+                            <strong>Years Experience</strong>
+                        </td>
+                    </tr>
+                    
+                    <tr class="table_row">
+                        <td>
+                            <p>
+                                Ruby
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                1
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr class="table_row">
+                        <td>
+                            <p>
+                                Java
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                3
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr class="table_row">
+                        <td>
+                            <p>
+                                Python
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                3
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>           
+            </table>
+            <br>
+            <br>
+            
+            <ul>
+                <li><span class="hobby">Camping:</span> Anywhere along the California coast</li>
+                    
+                <li><span class="hobby">Cooking:</span> Comfort food/American</li>
+
+                <li><span class="hobby">Sport:</span> Running with my dog, anything cardio</li>
+            </ul>
+            
+        </div>
+       
+
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+            <script>
+                $(function(){
+                    $('a').each(function(){
+                        if ($(this).prop('href') == window.location.href) {
+                            $(this).addClass('active'); $(this).parents('ul').addClass('active');
+                        }
+                    });
+                });
+            </script>
+
+        <footer>
+            <hr>
+                <div id="csumb_footer_logo">
+                    <img src="img/csumb_footer_logo.png" alt="CSUMB logo">
+                </div>
+
+                <div id="csumb_footer_text">
+                    &copy; Layla N Gallez 2022 
+                </div>
+            
+        </footer>
+    </body>
+
+   

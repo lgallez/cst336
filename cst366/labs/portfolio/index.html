@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Layla's Personal Portfolio</title>
+
+        <style>
+            @import url("css/style.css");
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                Layla N Gallez's Portfolio
+            </h1>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        </header>
+
+        <hr>
+        <div id="nav_bar">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <main>
+            <div id="pic">
+                <img src="img/layla_profile_pic.jpeg" alt="Layla's Profile Photo">
+            </div>
+                
+            <div id="text">
+                <p>
+                    Hello, <br><br>
+                    Welcome to my Portfolio.<br> 
+                    I am a current student of the California State University of Monterey Bay (CSUMB) Computer Science program working to obtain my B.S. <br>
+                    I am currently enrolled in the Internet Programming course. <br> 
+                    I have 4 years of experience in the fintech industry, specializing in fraud and data analytics. <br>
+                </p>
+            </div>
+
+            
+        </main>
+
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+            <script>
+                $(function(){
+                    $('a').each(function(){
+                        if ($(this).prop('href') == window.location.href) {
+                            $(this).addClass('active'); $(this).parents('ul').addClass('active');
+                        }
+                    });
+                });
+            </script>
+
+        <footer>
+            <hr>
+                <div id="csumb_footer_logo">
+                    <img src="img/csumb_footer_logo.png" alt="CSUMB logo">
+                </div>
+
+                <div id="csumb_footer_text">
+                    &copy; Layla N Gallez 2022 
+                </div>
+            
+        </footer>
+    </body>
+
+   
