@@ -63,6 +63,10 @@ li {
     color:            #F8F8F8;
 }
 
+a.current {
+    background:rgba(87, 50, 129, 0.881);
+  }
+
 main{
     display: flex;
     height: fit-content;
